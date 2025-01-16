@@ -1,0 +1,409 @@
+2025-01-14 13:52:45,772 [INFO] /Users/apple/Desktop/face login/python/face/urls.py changed, reloading.
+2025-01-14 13:52:57,755 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/Desktop/face login/python/face/views.py", line 104, in index
+    return render(request, 'register.html')
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+2025-01-14 13:59:45,541 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/Desktop/face login/python/face/views.py", line 104, in index
+    return render(request, 'register.html')
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+2025-01-14 14:01:13,459 [INFO] /Users/apple/Desktop/face login/python/face/urls.py changed, reloading.
+2025-01-14 14:01:43,572 [INFO] User registered successfully: woo
+2025-01-14 14:02:22,954 [DEBUG] Creating converter from 3 to 5
+2025-01-14 14:02:35,630 [DEBUG] Starting new HTTPS connection (1): github.com:443
+2025-01-14 14:02:37,225 [DEBUG] https://github.com:443 "GET /serengil/deepface_models/releases/download/v1.0/retinaface.h5 HTTP/11" 302 0
+2025-01-14 14:02:37,232 [DEBUG] Starting new HTTPS connection (1): objects.githubusercontent.com:443
+2025-01-14 14:02:39,636 [DEBUG] https://objects.githubusercontent.com:443 "GET /github-production-release-asset-2e65be/382368840/33c29e00-db93-11eb-9759-f46709626a4c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250114T140237Z&X-Amz-Expires=300&X-Amz-Signature=681757b4e6a5bc104cb13336d182076303a5c800184cb1f91723ec2e0a39a52e&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dretinaface.h5&response-content-type=application%2Foctet-stream HTTP/11" 200 118667368
+2025-01-14 14:03:00,412 [DEBUG] Starting new HTTPS connection (1): github.com:443
+2025-01-14 14:03:02,719 [DEBUG] https://github.com:443 "GET /serengil/deepface_models/releases/download/v1.0/retinaface.h5 HTTP/11" 302 0
+2025-01-14 14:03:02,780 [DEBUG] Starting new HTTPS connection (1): objects.githubusercontent.com:443
+2025-01-14 14:03:04,906 [DEBUG] https://objects.githubusercontent.com:443 "GET /github-production-release-asset-2e65be/382368840/33c29e00-db93-11eb-9759-f46709626a4c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250114T140237Z&X-Amz-Expires=300&X-Amz-Signature=681757b4e6a5bc104cb13336d182076303a5c800184cb1f91723ec2e0a39a52e&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dretinaface.h5&response-content-type=application%2Foctet-stream HTTP/11" 200 118667368
+2025-01-14 14:03:37,175 [INFO] User logged in successfully: woo
+2025-01-14 14:03:37,179 [ERROR] Face verification error: Reverse for 'profile' not found. 'profile' is not a valid view function or pattern name.
+2025-01-14 14:03:50,891 [ERROR] Face verification error: [Errno 2] No such file or directory: '/Users/apple/Desktop/face login/python/media/temp_woo_login.jpg'
+2025-01-14 14:36:25,068 [INFO] User registered successfully: s
+2025-01-14 14:37:10,960 [INFO] User logged in successfully: s
+2025-01-14 14:37:10,961 [ERROR] Face verification error: Reverse for 'profile' not found. 'profile' is not a valid view function or pattern name.
+2025-01-14 14:37:39,770 [INFO] User logged in successfully: s
+2025-01-14 14:37:39,771 [ERROR] Face verification error: Reverse for 'profile' not found. 'profile' is not a valid view function or pattern name.
+2025-01-14 14:39:00,055 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/Desktop/face login/python/face/views.py", line 104, in index
+    return render(request, 'register.html')
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+2025-01-14 14:39:16,518 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/Desktop/face login/python/face/views.py", line 104, in index
+    return render(request, 'register.html')
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login/' not found. 'login/' is not a valid view function or pattern name.
+2025-01-14 14:39:56,121 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/Desktop/face login/python/face/views.py", line 104, in index
+    return render(request, 'register.html')
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login_view' not found. 'login_view' is not a valid view function or pattern name.
+2025-01-14 14:40:16,706 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/Desktop/face login/python/face/views.py", line 104, in index
+    return render(request, 'register.html')
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+2025-01-14 14:42:55,737 [INFO] User registered successfully: gey
+2025-01-14 14:43:27,012 [INFO] User logged in successfully: gey
+2025-01-14 14:43:27,012 [ERROR] Face verification error: Reverse for 'profile' not found. 'profile' is not a valid view function or pattern name.
+2025-01-14 14:43:54,181 [INFO] User logged in successfully: gey
+2025-01-14 14:43:54,182 [ERROR] Face verification error: Reverse for 'profile' not found. 'profile' is not a valid view function or pattern name.
+2025-01-14 14:43:58,622 [ERROR] Face verification error: [Errno 2] No such file or directory: '/Users/apple/Desktop/face login/python/media/temp_gey_login.jpg'
+2025-01-14 14:45:46,967 [ERROR] Internal Server Error: /admin/face/login/6/change/
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/options.py", line 1855, in _changeform_view
+    "subtitle": str(obj) if obj else None,
+TypeError: __str__ returned non-string (type User)
+2025-01-14 14:46:27,801 [INFO] /Users/apple/Desktop/face login/python/face/models.py changed, reloading.
+2025-01-14 14:47:07,587 [INFO] /Users/apple/Desktop/face login/python/face/models.py changed, reloading.
+2025-01-14 14:48:52,754 [INFO] /Users/apple/Desktop/face login/python/face/models.py changed, reloading.
+2025-01-14 14:54:20,720 [INFO] User registered successfully: wwe
+2025-01-14 14:54:50,028 [DEBUG] Creating converter from 3 to 5
+2025-01-14 14:55:37,779 [INFO] User logged in successfully: wwe
+2025-01-14 14:55:37,784 [ERROR] Face verification error: Reverse for 'profile' not found. 'profile' is not a valid view function or pattern name.
+2025-01-14 14:55:38,398 [ERROR] Face verification error: [Errno 2] No such file or directory: '/Users/apple/Desktop/face login/python/media/temp_wwe_login.jpg'
+2025-01-14 14:58:42,048 [INFO] /Users/apple/Desktop/face login/python/python/settings.py changed, reloading.
+2025-01-14 14:59:30,645 [INFO] /Users/apple/Desktop/face login/python/face/urls.py changed, reloading.
+2025-01-14 15:01:04,166 [INFO] /Users/apple/Desktop/face login/python/face/urls.py changed, reloading.
+2025-01-14 15:02:11,846 [INFO] /Users/apple/Desktop/face login/python/python/settings.py changed, reloading.
+2025-01-14 15:02:56,941 [INFO] /Users/apple/Desktop/face login/python/face/models.py changed, reloading.
+2025-01-14 15:04:12,616 [INFO] /Users/apple/Desktop/face login/python/face/models.py changed, reloading.
+2025-01-14 15:05:01,776 [INFO] User registered successfully: fff
+2025-01-14 15:05:20,716 [DEBUG] Creating converter from 3 to 5
+2025-01-14 15:05:43,381 [INFO] User logged in successfully: fff
+2025-01-14 15:06:10,452 [INFO] User logged in successfully: fff
+2025-01-14 15:06:20,148 [ERROR] Face verification error: [Errno 2] No such file or directory: '/Users/apple/Desktop/face login/python/media/temp_fff_login.jpg'
+2025-01-14 15:14:03,498 [INFO] /Users/apple/Desktop/face login/python/face/views.py changed, reloading.
+2025-01-14 15:15:26,909 [INFO] User registered successfully: ppp
+2025-01-14 15:15:47,664 [DEBUG] Creating converter from 3 to 5
+2025-01-14 15:16:09,632 [INFO] User logged in successfully: ppp
+2025-01-14 15:16:29,319 [INFO] User logged in successfully: ppp
+2025-01-14 15:21:22,262 [INFO] /Users/apple/Desktop/face login/python/face/views.py changed, reloading.
+2025-01-14 15:22:09,234 [INFO] User registered successfully: aaa
+2025-01-14 15:22:28,179 [DEBUG] Creating converter from 3 to 5
+2025-01-14 15:22:53,034 [INFO] User logged in successfully: aaa
+2025-01-14 15:23:13,030 [INFO] User logged in successfully: aaa
+2025-01-14 15:23:57,746 [INFO] User logged in successfully: aaa
+2025-01-14 15:25:07,911 [INFO] /Users/apple/Desktop/face login/python/face/views.py changed, reloading.
+2025-01-14 15:26:07,181 [INFO] User registered successfully: eee
+2025-01-14 15:26:43,727 [DEBUG] Creating converter from 3 to 5
+2025-01-14 15:27:14,572 [INFO] User eee logged in successfully
+2025-01-14 15:28:08,037 [INFO] User eee logged in successfully
+2025-01-14 15:30:06,877 [INFO] User registered successfully: kkk
+2025-01-14 15:30:54,549 [INFO] User kkk logged in successfully
+2025-01-14 15:36:13,348 [INFO] User registered successfully: hello
+2025-01-14 15:36:54,296 [INFO] User hello logged in successfully
+2025-01-14 15:41:42,457 [INFO] /Users/apple/Desktop/face login/python/face/views.py changed, reloading.
+2025-01-14 15:46:10,188 [INFO] User registered successfully: qqq
+2025-01-14 15:46:33,214 [DEBUG] Creating converter from 3 to 5
+2025-01-14 15:47:03,126 [INFO] User qqq logged in successfully
+2025-01-14 15:47:18,082 [INFO] User logged out: 
+2025-01-14 15:47:33,197 [ERROR] Face verification error: Exception while processing img1_path
+2025-01-14 15:47:59,294 [INFO] User qqq logged in successfully
+2025-01-14 15:48:08,613 [INFO] User logged out: 
+2025-01-14 15:48:22,051 [ERROR] User uuun does not exist.
+2025-01-14 15:48:30,210 [ERROR] Login entry for user uuu does not exist.
+2025-01-14 15:48:36,134 [ERROR] Login entry for user uuu does not exist.
+2025-01-14 15:48:57,804 [WARNING] Not Found: /logins/
+2025-01-14 15:49:29,072 [WARNING] Not Found: /logins/
+2025-01-14 15:49:34,002 [WARNING] Not Found: /logins/
+2025-01-14 15:50:04,073 [INFO] User wwe logged in successfully
+2025-01-14 15:50:23,973 [WARNING] Not Found: /logins/
+2025-01-14 15:51:10,296 [ERROR] Face verification failed for user wwe
+2025-01-14 15:51:49,868 [INFO] User wwe logged in successfully
+2025-01-15 09:32:25,362 [INFO] User registered successfully: hhh
+2025-01-15 09:32:33,392 [WARNING] Not Found: /logins/
+2025-01-15 09:33:06,306 [DEBUG] Creating converter from 3 to 5
+2025-01-15 09:33:32,789 [INFO] User hhh logged in successfully
+2025-01-15 09:33:56,036 [WARNING] Not Found: /logins/
+2025-01-15 09:34:01,374 [WARNING] Not Found: /logins/
+2025-01-15 09:34:05,690 [WARNING] Not Found: /logins/
+2025-01-15 09:34:28,855 [ERROR] Face verification error: Exception while processing img1_path
+2025-01-15 09:34:57,092 [ERROR] Face verification failed for user hhh
+2025-01-15 09:35:27,503 [ERROR] Face verification failed for user hhh
+2025-01-15 09:35:57,445 [ERROR] Face verification failed for user hhh
+2025-01-15 09:36:32,201 [INFO] User hhh logged in successfully
+2025-01-15 09:38:10,697 [ERROR] Face verification error: Exception while processing img1_path
+2025-01-15 09:38:31,766 [INFO] User hhh logged in successfully
+2025-01-15 09:40:02,852 [INFO] /Users/apple/Desktop/face login/python/face/views.py changed, reloading.
+2025-01-15 09:40:38,627 [INFO] User registered successfully: muaz
+2025-01-15 09:40:45,637 [WARNING] Not Found: /logins/
+2025-01-15 09:41:21,364 [DEBUG] Creating converter from 3 to 5
+2025-01-15 09:41:46,790 [INFO] User muaz logged in successfully
+2025-01-15 09:42:17,126 [ERROR] Face verification error: Exception while processing img1_path
+2025-01-15 09:42:25,000 [WARNING] Not Found: /logins/
+2025-01-15 09:42:51,884 [ERROR] Internal Server Error: /admin/face/login/
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/options.py", line 1959, in changelist_view
+    response = self.response_action(
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/options.py", line 1593, in response_action
+    response = func(self, request, queryset)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/actions.py", line 39, in delete_selected
+    ) = modeladmin.get_deleted_objects(queryset, request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/options.py", line 2101, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/utils.py", line 154, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/utils.py", line 221, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/utils.py", line 207, in _nested
+    ret = [format_callback(obj)]
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/contrib/admin/utils.py", line 129, in format_callback
+    no_edit_link = "%s: %s" % (capfirst(opts.verbose_name), obj)
+TypeError: __str__ returned non-string (type User)
+2025-01-15 09:43:16,352 [INFO] /Users/apple/Desktop/face login/python/face/models.py changed, reloading.
+2025-01-15 09:43:52,576 [ERROR] Login entry for user hhh does not exist.
+2025-01-15 09:44:06,923 [DEBUG] Creating converter from 3 to 5
+2025-01-15 09:44:25,471 [INFO] /Users/apple/Desktop/face login/python/face/models.py changed, reloading.
+2025-01-15 10:11:13,403 [INFO] User registered successfully: sir
+2025-01-15 10:12:02,547 [DEBUG] Creating converter from 3 to 5
+2025-01-15 10:12:24,256 [INFO] User sir logged in successfully
+2025-01-15 10:13:38,453 [INFO] User sir logged in successfully
+2025-01-15 10:14:23,712 [INFO] User sir logged in successfully
+2025-01-15 10:20:14,823 [INFO] /Users/apple/Desktop/face login/python/face/views.py changed, reloading.
+2025-01-15 10:20:47,969 [INFO] User registered successfully: yoyo
+2025-01-15 10:20:55,452 [WARNING] Not Found: /logins/
+2025-01-15 10:21:32,629 [DEBUG] Creating converter from 3 to 5
+2025-01-15 10:21:53,917 [INFO] User yoyo logged in successfully
+2025-01-15 10:22:13,919 [ERROR] User kkkk does not exist.
+2025-01-15 10:22:54,233 [INFO] User yoyo logged in successfully
+2025-01-15 10:46:54,802 [INFO] /Users/apple/Desktop/face login/python/face/views.py changed, reloading.
+2025-01-15 10:47:09,109 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/Desktop/face login/python/face/views.py", line 111, in index
+    return render(request, 'index.html')  # Replace 'index.html' with your actual template
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+2025-01-15 10:47:38,030 [INFO] /Users/apple/Desktop/face login/python/face/views.py changed, reloading.
+2025-01-15 10:48:22,101 [INFO] User registered successfully: go
+2025-01-15 10:49:07,025 [DEBUG] Creating converter from 3 to 5
+2025-01-15 10:49:32,045 [INFO] User go logged in successfully
+2025-01-15 10:51:02,944 [INFO] /Users/apple/Desktop/face login/python/face/views.py changed, reloading.
+2025-01-15 10:51:22,320 [WARNING] Not Found: /logins/
+2025-01-15 10:51:24,506 [WARNING] Not Found: /logins/
+2025-01-15 10:51:39,915 [DEBUG] Creating converter from 3 to 5
+2025-01-15 10:51:55,944 [ERROR] Face verification error: Exception while processing img1_path
+2025-01-15 10:52:13,739 [INFO] User go logged in successfully
+2025-01-15 10:52:16,255 [INFO] User logged out: 
+2025-01-15 10:52:24,982 [ERROR] Login entry for user kkk does not exist.
+2025-01-15 13:52:45,673 [INFO] /Users/apple/Desktop/face login/python/face/admin.py changed, reloading.

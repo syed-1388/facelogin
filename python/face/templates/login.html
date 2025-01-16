@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Face Recognition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .camera-container {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        video {
+            width: 100%;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            display: block;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        button#capture-button {
+            margin-top: 10px;
+        }
+
+        button#login-button {
+            width: 100%;
+        }
+
+        .success {
+            color: #28a745;
+            margin-top: 10px;
+        }
+
+        .error {
+            color: #dc3545;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login With Face Recognition</h2>
+        <form id="login-form">
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <div class="camera-container">
+                <video id="video" autoplay playsinline></video>
+                <button type="button" id="capture-button">Capture Face</button>
+                <canvas id="canvas" style="display: none;"></canvas>
+            </div>
+            <button type="submit" id="login-button" disabled>Login</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('canvas');
+            const captureButton = document.getElementById('capture-button');
+            const loginButton = document.getElementById('login-button');
+            const form = document.getElementById('login-form');
+            const message = document.getElementById('message');
+            let isImageCaptured = false;
+
+            // Access the webcam
+            async function initCamera() {
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                    video.srcObject = stream;
+                    await video.play();
+                } catch (error) {
+                    console.error('Error accessing webcam:', error);
+                    message.textContent = 'Error accessing webcam. Please allow camera permissions.';
+                    message.className = 'error';
+                }
+            }
+
+            initCamera();
+
+            captureButton.addEventListener('click', function () {
+                const context = canvas.getContext('2d');
+                canvas.width = video.videoWidth;
+                canvas.height = video.videoHeight;
+                context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                isImageCaptured = true;
+                loginButton.disabled = false;
+                message.textContent = 'Face captured successfully!';
+                message.className = 'success';
+            });
+
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                if (!isImageCaptured) {
+                    message.textContent = 'Please capture your face image first!';
+                    message.className = 'error';
+                    return;
+                }
+
+                const username = document.getElementById('username').value;
+                const faceData = canvas.toDataURL('image/png');
+
+                loginButton.disabled = true;
+                loginButton.textContent = 'Logging in...';
+
+                try {
+                    const response = await fetch('/login/', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ username, face_image: faceData })
+                    });
+
+                    const result = await response.json();
+                    console.log(result);  // Check the result from the backend
+
+                    if (result.status === 'success') {
+                        window.location.href = result.redirect_url;  // Redirect on success
+                    } else {
+                        message.textContent = result.message;
+                        message.className = 'error';
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    message.textContent = 'An error occurred. Please try again.';
+                    message.className = 'error';
+                } finally {
+                    loginButton.disabled = false;
+                    loginButton.textContent = 'Login';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
